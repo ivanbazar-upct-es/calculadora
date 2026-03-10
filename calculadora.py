@@ -241,12 +241,12 @@ boton_cerrar = tk.Button(ventana, text="Cerrar", font=("Arial", 14), bg="#FF5722
 boton_cerrar.pack(pady=20)
 
 # Etiqueta 
-etiqueta = tk.Label(ventana, text="Made por Iván, su pijica, sus huevicos", font=("Arial", 12), fg="#555555", bg="#f0f0f0")
+etiqueta = tk.Label(ventana, text="Made por Iván", font=("Arial", 12), fg="#555555", bg="#f0f0f0")
 etiqueta.pack(side=tk.BOTTOM, pady=10)
 
 # Asociar la tecla Enter con la función de cálculo (igual)
 ventana.bind("<Return>", lambda event: calcular())
-
+ 
 # Configurar el grid para que los botones se ajusten bien
 for i in range(5):
     botones_frame.grid_columnconfigure(i, weight=1)
